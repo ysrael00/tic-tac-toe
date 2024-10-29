@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Jogo da Velha</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Jogo da Velha</h1>
+    <div class="player-inputs">
+        <label for="player1">Nome do Jogador 1 (X):</label>
+        <input type="text" id="player1" placeholder="Jogador 1">
+        <label for="player2">Nome do Jogador 2 (O):</label>
+        <input type="text" id="player2" placeholder="Jogador 2">
+        <button id="startButton">Iniciar Jogo</button>
+    </div>
+    <div id="game" class="hidden">
+        <h2 id="currentPlayer"></h2>
+        <div class="board">
+            <div class="cell" data-index="0"></div>
+            <div class="cell" data-index="1"></div>
+            <div class="cell" data-index="2"></div>
+            <div class="cell" data-index="3"></div>
+            <div class="cell" data-index="4"></div>
+            <div class="cell" data-index="5"></div>
+            <div class="cell" data-index="6"></div>
+            <div class="cell" data-index="7"></div>
+            <div class="cell" data-index="8"></div>
+        </div>
+        <h2 id="message"></h2>
+        <button id="resetButton">Reiniciar Jogo</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
